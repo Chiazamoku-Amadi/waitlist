@@ -1,0 +1,5 @@
+{
+  "name": "ai-job-application-reviewer-waitlist",
+  "main": "src/server/index.ts",
+  "compatibility_date": "2026-10-05",
+}

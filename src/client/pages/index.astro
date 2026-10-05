@@ -3,18 +3,21 @@ import Hero from "../components/Hero.astro";
 import Card from "../components/Card.astro";
 import Signup from "../components/Signup";
 import Layout from "../layouts/Layout.astro";
+import ServerStatus from "../components/ServerStatus";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <section class="flex flex-col justify-center items-center gap-8 h-full xl:h-screen">
+  <section class="flex flex-col justify-center items-center gap-8 h-full lg:h-screen">
     <Hero />
 
     <div class="flex justify-center p-4">
       <Signup />
     </div>
+
+    <ServerStatus client:load />
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 my-8 mx-4 max-w-7xl">
       <Card
