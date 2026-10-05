@@ -1,5 +1,7 @@
 ---
-import Hello from "../components/Hello.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+import Signup from "../components/Signup";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +9,28 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <Hello />
+  <section class="flex flex-col justify-center items-center gap-8 h-full xl:h-screen">
+    <Hero />
+
+    <div class="flex justify-center p-4">
+      <Signup />
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 my-8 mx-4 max-w-7xl">
+      <Card
+        title="Assisted Job Application Review"
+        description="Get assistance reviewing your applications and applying for more jobs in lesser time"
+      />
+
+      <Card
+        title="Submit ATS-optimised Applications"
+        description="Send in high-quality, ATS-optimised job applications and increase your chances of getting hired"
+      />
+
+      <Card
+        title="Focus on Interview Preparation"
+        description="Spend less time obsessing over applications and more time preparing for your interviews"
+      />
+    </div>
+  </section>
 </Layout>
