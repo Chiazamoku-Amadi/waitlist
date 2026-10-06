@@ -2,4 +2,22 @@
   "name": "ai-job-application-reviewer-waitlist",
   "main": "src/server/index.ts",
   "compatibility_date": "2026-10-05",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSESTS"
+  },
+  "env": {
+    "staging": {
+      "vars": {
+        "ENVIRONMENT": "staging",
+        "CF_ACCESS_DOMAIN": "https://winter-base-3c36.cloudflareaccess.com",
+        "POLICY_AUD": "7beba3f08e2b8a6f536041452289f8f38b38984d87e0c147eb40e87946964f97"
+      }
+    },
+    "production": {
+      "vars": {
+        "ENVIRONMENT": "production"
+      }
+    }
+  }
 }
