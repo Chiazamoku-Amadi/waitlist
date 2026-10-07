@@ -6,13 +6,27 @@
     "directory": "./dist",
     "binding": "ASSESTS"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ai_job_reviewer_local_db",
+      "database_id": "123"
+    }
+  ],
   "env": {
     "staging": {
       "vars": {
         "ENVIRONMENT": "staging",
         "CF_ACCESS_DOMAIN": "https://winter-base-3c36.cloudflareaccess.com",
         "POLICY_AUD": "7beba3f08e2b8a6f536041452289f8f38b38984d87e0c147eb40e87946964f97"
-      }
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "ai_job_reviewer_staging_db",
+          "database_id": "bd5b8f34-958e-492e-85ae-f8dc333a16b2"
+        }
+      ]
     },
     "production": {
       "vars": {
