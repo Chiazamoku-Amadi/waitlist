@@ -10,7 +10,8 @@
     {
       "binding": "DB",
       "database_name": "ai_job_reviewer_local_db",
-      "database_id": "123"
+      "database_id": "123",
+      "migrations_dir": "./src/server/db/migrations"
     }
   ],
   "env": {
@@ -24,7 +25,8 @@
         {
           "binding": "DB",
           "database_name": "ai_job_reviewer_staging_db",
-          "database_id": "bd5b8f34-958e-492e-85ae-f8dc333a16b2"
+          "database_id": "bd5b8f34-958e-492e-85ae-f8dc333a16b2",
+          "migrations_dir": "./src/server/db/migrations"
         }
       ]
     },
